@@ -8,6 +8,8 @@
   <!-- Comment out the reset stylesheet until the Style CSS sheet is ready. -->
 <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 
+<!-- Bootstraps CSS -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
   <!-- Style CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
@@ -18,15 +20,15 @@
 <!-- HTML!!! -->
 <!-- Tag Line. -->
 <!-- Div for header starts here -->
-<div id="header">
-<h1><strong>Crystal Collector</strong></h1>
+<div class="header">
+<p id="crystalCollector">Crystal Cavern Game!</p>
 <!-- div for header ends here. -->
 </div>
 <!-- Container these -->
 <!-- Paragraphs of the basic format of the example. -->
 <!-- Div for instructions starting here. -->
-<div id="instructions">
-  <h2> How to play: </h2>
+<div class="instructions">
+  <p> How to play: </h2>
   <ol>
     <li> You will be given a random target number at the start of the game.<span></span></li>
 <li>There are four crystals below:</li> 
@@ -41,17 +43,15 @@
  <li> The value that each crystal provides is hidden from you until you click on it, but will randomize between 1-12. </li>
 <li> You win the game by matching your total score per clicking the crystals, to the provided number to get.</li>
 <li> You will lose the game if your total score goes above the number to get. </li>
-
-
 </ol>
 <!-- Div for instructions ending here. -->
 </div>
 <!-- Creating variables on HTML for number to match, wins and losses, gems, and user total,  -->
 <!-- Number to match variable. -->
 <div class="numberToMatch">
-  <h1>Number to Get:
+  <p id="numberToGet">Number to Get:
     <span id="randomNumber"></span>
-  </h1>
+  </p>
 </div>
 <!-- Wins and losses variable. -->
 <!-- Wins -->
@@ -70,10 +70,10 @@
 
 <!-- Creating variable image ids for gems. class of gems, and class of gemImages. -->
 <div class="gems">
-  <img src="assets/images/red-gem.jpg" class=gemImage id="one" alt="Red Gem">
-  <img src="assets/images/blue-gem.jpg" class=gemImage id="two" alt="Blue Gem">
-  <img src="assets/images/yellow-gem.jpeg" class=gemImage id="three" alt="Yellow Gem">
-  <img src="assets/images/green-gem.jpeg" class=gemImage id="four" alt="Green Gem">
+  <img src="assets/images/red-gem.jpg" width = "250px;" height = "220px;" class=gemImage id="one" alt="Red Gem">
+  <img src="assets/images/blue-gem.jpg" width = "250px;" height = "220px;" class=gemImage id="two" alt="Blue Gem">
+  <img src="assets/images/yellow-gem.jpeg" width = "250px;" height = "220px;" class=gemImage id="three" alt="Yellow Gem">
+  <img src="assets/images/green-gem.jpeg" width = "250px;" height = "220px;" class=gemImage id="four" alt="Green Gem">
 </div>
 <!-- Creating a variable for user total -->
 <div class="userTotal">
