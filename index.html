@@ -18,29 +18,31 @@
 <!-- HTML!!! -->
 <!-- Tag Line. -->
 <!-- Div for header starts here -->
-<div class="header">
+<div id="header">
 <h1><strong>Crystal Collector</strong></h1>
 <!-- div for header ends here. -->
 </div>
 <!-- Container these -->
 <!-- Paragraphs of the basic format of the example. -->
 <!-- Div for instructions starting here. -->
-<div class="instructions">
+<div id="instructions">
   <h2> How to play: </h2>
   <ol>
-    <li> You will be given a random number at the start of the game.<span>"Number to Get"</span></li>
-<li>There are four crystals below.</li> 
+    <li> You will be given a random target number at the start of the game.<span></span></li>
+<li>There are four crystals below:</li> 
   <ol>
-    <li id="blue">Blue</li>
-    <li id="green">Green</li>
     <li id="red">Red</li>
-    <li id="yellow">Yellow</li> <!-- Change to gold.-->
+    <li id="blue">Blue</li>
+    <li id="yellow">Yellow</li>
+    <li id="green">Green</li> <!-- Change to gold.-->
   </ol>
+  <li> Each time the game starts, the game will randomly assign the values of each crystal. </li>
  <li> By clicking on a crystal, you will add a specific amount of points to your total score. </li>
-<li> You win the game by matching your total score to the provided random number.</li>
-<li> You will lose the game if your total score goes above the random number </li>
-<li> The value that each crystal provides is hidden from you until you click on it, but will randomize between " " </li>
-<li> Each time the game starts, the game will randomly assign the values of each crystal. </li>
+ <li> The value that each crystal provides is hidden from you until you click on it, but will randomize between 1-12. </li>
+<li> You win the game by matching your total score per clicking the crystals, to the provided number to get.</li>
+<li> You will lose the game if your total score goes above the number to get. </li>
+
+
 </ol>
 <!-- Div for instructions ending here. -->
 </div>
@@ -65,12 +67,13 @@
     <span id="numberLosses"></span>
   </h1>
 </div>
+
 <!-- Creating variable image ids for gems. class of gems, and class of gemImages. -->
 <div class="gems">
-  <img src="assets/images/blue-gem.jpg" class=gemImage id="one" alt="Blue Gem">
-  <img src="assets/images/green-gem.jpeg" class=gemImage id="two" alt="Green Gem">
-  <img src="assets/images/red-gem.jpg" class=gemImage id="three" alt="Red Gem">
-  <img src="assets/images/yellow-gem.jpeg" class=gemImage id="four" alt="Yellow Gem">
+  <img src="assets/images/red-gem.jpg" class=gemImage id="one" alt="Red Gem">
+  <img src="assets/images/blue-gem.jpg" class=gemImage id="two" alt="Blue Gem">
+  <img src="assets/images/yellow-gem.jpeg" class=gemImage id="three" alt="Yellow Gem">
+  <img src="assets/images/green-gem.jpeg" class=gemImage id="four" alt="Green Gem">
 </div>
 <!-- Creating a variable for user total -->
 <div class="userTotal">
