@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Crystal Cavern Game</title>
   <!-- Links for CSS Below:  -->
   <!-- Reset CSS -->
+  <!-- Comment out the reset stylesheet until the Style CSS sheet is ready. -->
+<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 
   <!-- Style CSS -->
-
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
   <!-- Javascript Runners:  -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+
 </head>
 <body>
-
 <!-- HTML!!! -->
 <!-- Tag Line. -->
 <!-- Div for header starts here -->
@@ -24,8 +26,7 @@
 <!-- Paragraphs of the basic format of the example. -->
 <!-- Div for instructions starting here. -->
 <div class="instructions">
-  <h2> How to play! </h2>
-  <br>
+  <h2> How to play: </h2>
   <ol>
     <li> You will be given a random number at the start of the game.<span>"Number to Get"</span></li>
 <li>There are four crystals below.</li> 
@@ -58,6 +59,7 @@
   </h1>
 </div>
 <!-- Losses -->
+<!-- Originally these were out of divs but divs help with my css. -->
 <div class="losses">
   <h1>Losses
     <span id="numberLosses"></span>
@@ -73,7 +75,7 @@
 <!-- Creating a variable for user total -->
 <div class="userTotal">
   <h1> Your Total Score is: 
-    <span id="finalTotal"></span>
+  <span id="totalScore"></span>
   </h1>
 </div>
 
@@ -92,7 +94,8 @@
 
 
     <!-- JAVASCRIPT!!!! -->
-  
+    <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
     
 </body>
 </html>
