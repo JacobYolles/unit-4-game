@@ -9,7 +9,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 
 <!-- Bootstraps CSS -->
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!-- Style CSS -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
@@ -48,26 +48,34 @@
 </div>
 <!-- Creating variables on HTML for number to match, wins and losses, gems, and user total,  -->
 <!-- Number to match variable. -->
+<div class="row">
+  <div class="col-md-4">
 <div class="numberToMatch">
   <p id="numberToGet">Number to Get:
     <span id="randomNumber"></span>
   </p>
 </div>
+</div>
 <!-- Wins and losses variable. -->
 <!-- Wins -->
+<div class="col-md-4">
 <div class="wins">
   <p id="numberOfWins">Wins:
       <span id="numberWins"></span>
   </p>
 </div>
+</div>
 <!-- Losses -->
 <!-- Originally these were out of divs but divs help with my css. -->
+<div class="col-md-4">
 <div class="losses">
   <p id= "numberOfLosses">Losses
     <span id="numberLosses"></span>
   </p>
 </div>
+</div>
 
+</div>
 <!-- Creating variable image ids for gems. class of gems, and class of gemImages. -->
 <div class="gems">
   <img src="assets/images/red-gem.jpg" width = "250px;" height = "220px;" class=gemImage id="one" alt="Red Gem">
